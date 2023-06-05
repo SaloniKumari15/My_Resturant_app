@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyderabad's Top Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hyderabad's Top Restaurant</h1>
+    </div>
+    <div class="container">
+      <!-- <div class="tables">
+        <h2>Tables</h2>
+        <input type="text" id="input1" placeholder="Search table" />
+        <div class="table-cards">
+          <div class="table-card" data-id="1">
+            <h3>Table 1</h3>
+            <div class="order-details">
+              <div class="order-items"></div>
+              <div class="total"></div>
+            </div>
+            <div class="order-details-show"></div>
+          </div>
+          <div class="table-card" data-id="2">
+            <h3>Table 2</h3>
+            <div class="order-details">
+              <div class="order-items"></div>
+              <div class="total"></div>
+            </div>
+            <div class="order-details-show"></div>
+          </div>
+          <div class="table-card" data-id="3">
+            <h3>Table 3</h3>
+            <div class="order-details">
+              <div class="order-items"></div>
+              <div class="total"></div>
+            </div>
+            <div class="order-details-show"></div>
+          </div>
+        </div>
+      </div> -->
+      <div class="menu-section">
+        <h2>Menu</h2>
+        <div class="search-bar">
+          <input type="text" id="myInput" placeholder="Search menu..." />
+          <button class="search" id="myButton">Search</button>
+          <select id="categorySelect">
+            <option value="">All Courses</option>
+            <option value="appetizers">Appetizers</option>
+            <option value="entrees">Entrees</option>
+            <option value="main-courses">Main Courses</option>
+            <option value="desserts">Desserts</option>
+            <option value="beverages">Beverages</option>
+          </select>
+        </div>
+        <div class="menu-items" id = "menuItems">
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h2>order-details</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Sub-Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="total">
+          <label>Total:</label>
+        </div>
+        <div class="close-button">
+          <button class="close-session">close session</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

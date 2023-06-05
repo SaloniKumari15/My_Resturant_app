@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  background-color: #e5e5e5;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  /* background-image: url("img.jpg"); */
+  background-color: #fffcfc;
+}
+
+.tables {
+  flex-basis: 25%;
+  background-color: rgb(97, 125, 153);
+  order:0;
+}
+
+.tables h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tables input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.tables .table-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tables .table-card {
+  background-color: #f9f9f9;
+  border: 1px solid #131212;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex-basis: 100%;
+  padding: 10px;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.2rem;
+  padding: 1rem;
+  box-shadow: 0px 3px 5px 3px #eab6b6;
+  box-sizing: border-box;
+}
+
+.tables .table-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.tables .table-card p {
+  margin: 0;
+}
+.menu-section {
+  flex-basis: 70%;
+  border-left: 2px solid black;
+  order:1;
+}
+
+.menu-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  margin-left: 5px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px 3px #eab6b6;
+}
+
+.search-bar button {
+  padding: 8px;
+  margin-left: 5px;
+  width: 10%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px 3px #eab6b6;
+}
+
+.search-bar select {
+  padding: 8px;
+  margin-left: 5px;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px 3px #eab6b6;
+}
+
+.menu-section .menu-items .menu-item {
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.order-items {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0px 3px 5px 3px #eab6b6;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.popup-header h2 {
+  margin: 0;
+}
+
+.close-btn {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content {
+  background-color: #e7e8e2;
+  padding: 10px;
+}
+
+.popup-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.popup-content th,
+.popup-content td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border: none;
+}
+
+.popup-content td input[type="number"] {
+  width: 50px;
+}
+
+.popup-content td button.remove-btn {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content .total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  border-top: 01px solid #ccc;
+}
+
+.popup-content .total label {
+  margin-right: 10px;
+}
+
+.popup-content .total span {
+  font-weight: bold;
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: right;
+}
+.close-session {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.quantity-btn {
+  display: inline-block;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.minus-btn {
+  background-color: #999;
+}
+
+.plus-btn {
+  background-color: #f90;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
